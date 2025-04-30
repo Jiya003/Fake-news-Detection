@@ -15,21 +15,6 @@ This project uses a machine learning model (XGBoost) to detect whether a given n
 
 ---
 
-## 📁 Project Structure
-
-── static/ 
-  ├── style.css 
-  └── script.js
-── templates/ 
-  └── index.html 
-xgb_model.pkl 
-app.py 
-vectorizer.pkl 
-README.md
-
-
----
-
 ## ⚙️ Installation
 
 ```bash
@@ -38,6 +23,7 @@ cd fake-news-detector
 pip install -r requirements.txt
 ```
 
+---
 
 ## Run the app
 ```bash
@@ -48,37 +34,33 @@ Navigate to http://127.0.0.1:5000 in your browser.
 
 ## MACHINE LEARNING MODEL DETAILS
 
-Algorithm: XGBoost Classifier
+- Algorithm: XGBoost Classifier
+- Accuracy: ~63%
+- Class 0: Fake News
+- Class 1: Real News
+- Text Features: Cleaned, tokenized, stemmed, and vectorized text
+- SMOTE: Used to balance class distribution
 
-Accuracy: ~63%
-
-Class 0: Fake News
-
-Class 1: Real News
-
-Text Features: Cleaned, tokenized, stemmed, and vectorized text
-
-SMOTE: Used to balance class distribution
-
+---
 
 ## REQUIREMENTS
 
-Flask
+- Flask
+- scikit-learn
+- pandas
+- xgboost
+- nltk
+- imblearn (for SMOTE)
 
-scikit-learn
+--- 
 
-pandas
-
-xgboost
-
-nltk
-
-imblearn (for SMOTE)
-
-📜 License
+## 📜 License
 
 MIT License
-👩‍💻 Author
+
+--- 
+
+## 👩‍💻 Author
 
 Divyanshi Maurya – LinkedIn | GitHub
 
